@@ -77,7 +77,7 @@ const Youtube = styled.div`
   height: 80vh;
   background-color: #333;
   left: 50%;
-  top: 80px;
+  top: 0;
   transform: translateX(-50%);
   overflow: hidden;
   box-shadow: rgba(0, 0, 0, 0.4) 0px 2px 4px,

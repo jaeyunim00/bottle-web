@@ -1,0 +1,67 @@
+body {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  padding: 10px; /* 조절 가능한 여백 값 */
+  margin: 0;
+  overflow: hidden;
+}
+canvas {
+  border: 1px solid #000;
+  width: 80%; /* 가로 너비를 80%로 설정 */
+  height: 55%; /* 세로 높이를 40%로 설정 */
+}
+
+#myModal {
+  display: none; /* 모달 초기에는 숨겨진 상태 */
+  position: fixed;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  padding: 20px;
+  background-color: rgba(255, 252, 252, 0.447); /* 배경 색상 변경 */
+  box-shadow: 0 0 10px rgba(232, 229, 229, 0.5); /* 그림자 효과 추가 */
+  text-align: center;
+}
+#myMethod {
+  display: none; /* 모달 초기에는 숨겨진 상태 */
+  position: fixed;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  padding: 20px;
+  background-color: rgba(255, 252, 252, 0.447); /* 배경 색상 변경 */
+  box-shadow: 0 0 10px rgba(232, 229, 229, 0.5); /* 그림자 효과 추가 */
+  text-align: center;
+}
+
+.modal-content {
+  color: #0e0d0d; /* 텍스트 색상 변경 */
+  font-size: 24px; /* 폰트 크기 변경 */
+}
+.method-content {
+  color: #0e0d0d; /* 텍스트 색상 변경 */
+  font-size: 24px; /* 폰트 크기 변경 */
+}
+
+/* 닫기 버튼 스타일 */
+.close {
+  color: #888;
+  font-size: 30px;
+  font-weight: bold;
+  cursor: pointer;
+}
+
+/* 닫기 버튼에 호버 효과 추가 */
+.close:hover {
+  color: #f00;
+}
+
+#myButton {
+  /* display: none; */
+  position: absolute;
+  top: 160px;
+  left: 50%;
+  transform: translateX(-50%);
+  width: 75%;
+}

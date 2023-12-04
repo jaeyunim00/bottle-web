@@ -36,6 +36,7 @@ const Box = styled(motion.div)`
   border-radius: 20px;
   height: 200px;
   box-shadow: 0 2px 3px rgba(0, 0, 0, 0.1), 0 10px 20px rgba(0, 0, 0, 0.06);
+  overflow: hidden;
 `;
 
 const Overlay = styled(motion.div)`
@@ -63,11 +64,35 @@ function TopicSection() {
       >
         환경에 관한 최근 토픽을 확인해보세요!
       </MainMsg>
-      <Grid>
-        <Box key={"1"} layoutId={"1"} onClick={() => setClickedId("1")}></Box>
-        <Box key={"2"} layoutId={"2"} onClick={() => setClickedId("2")}></Box>
-        <Box key={"3"} layoutId={"3"} onClick={() => setClickedId("3")}></Box>
-        <Box key={"4"} layoutId={"4"} onClick={() => setClickedId("4")}></Box>
+      <Grid style={{ zIndex: 0 }}>
+        <Box key={"1"} layoutId={"1"} onClick={() => setClickedId("1")}>
+          <iframe
+            src="https://news.kbs.co.kr/news/pc/view/view.do?ncd=7742803"
+            width={"100%"}
+            height={"100%"}
+          ></iframe>
+        </Box>
+        <Box key={"2"} layoutId={"2"} onClick={() => setClickedId("2")}>
+          <iframe
+            src="https://news.kbs.co.kr/news/pc/view/view.do?ncd=7742803"
+            width={"100%"}
+            height={"100%"}
+          ></iframe>
+        </Box>
+        <Box key={"3"} layoutId={"3"} onClick={() => setClickedId("3")}>
+          <iframe
+            src="https://news.kbs.co.kr/news/pc/view/view.do?ncd=7742803"
+            width={"100%"}
+            height={"100%"}
+          ></iframe>
+        </Box>
+        <Box key={"4"} layoutId={"4"} onClick={() => setClickedId("4")}>
+          <iframe
+            src="https://news.kbs.co.kr/news/pc/view/view.do?ncd=7742803"
+            width={"100%"}
+            height={"100%"}
+          ></iframe>
+        </Box>
       </Grid>
       <AnimatePresence>
         {clickedId ? (
